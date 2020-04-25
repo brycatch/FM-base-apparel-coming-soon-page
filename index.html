@@ -17,9 +17,12 @@
             <span>We're</span>
             <h1>Coming soon</h1>
             <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay-up-to-date with announcements and our launch deals</p>
-            <form action="#">
+            <form novalidate id="form" onsubmit="return false;">
+                <label for="email" id="email-label">
+                    Please provide a valid email
+                </label>
                 <input type="email" name="email" id="email" placeholder="Email Address">
-                <button type="submit">
+                <button type="submit" id="submit">
                     <img src="./assets/icon-arrow.svg" alt="Arrow">
                 </button>
             </form>
